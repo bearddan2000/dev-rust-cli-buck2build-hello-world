@@ -1,0 +1,13 @@
+load("@prelude//toolchains:rust.bzl", "system_rust_toolchain")
+
+# Copyright 2015-present, Facebook, Inc.
+# All rights reserved.
+#
+# This source code is licensed under the license found in the
+# LICENSE file in the root directory of this source tree.
+
+system_rust_toolchain(
+    name = "rust",
+    default_edition = "nightly-2023-07-10",
+    visibility = ["PUBLIC"],
+)
